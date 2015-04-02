@@ -2,7 +2,7 @@
     "ace": {
         "@guessTabSize": true,
         "@newLineMode": "unix",
-        "@tabSize": null,
+        "@tabSize": {},
         "@useSoftTabs": true
     },
     "build": {
@@ -12,6 +12,14 @@
     },
     "find.nak": {
         "@searchLimit": 100
+    },
+    "language": {
+        "@eslintrc": "true",
+        "@instanceHighlight": "true",
+        "@semi": "true",
+        "@undeclaredVars": "true",
+        "@unusedFunctionArgs": "false",
+        "@warnLevel": "info"
     },
     "run": {
         "@path": "/.c9/runners",
