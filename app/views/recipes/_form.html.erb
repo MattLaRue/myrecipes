@@ -1,0 +1,31 @@
+<%= render 'shared/error', obj: @recipe %>
+<div class="row">
+    <div class ="well col-md-8 col-md-offset-2">
+        <%= form_for @recipe do |f| %>
+        <%= f.label :name %>
+        <%= f.text_field :name %>
+        <%= f.label :summary %>
+        <%= f.text_field :summary %>
+        <%= f.label :desciprion %>
+        <%= f.text_area :description, rows: 10%>
+        <%= f.submit(@recipe.new_record? ? 'Create Recipe' : 'Edit Recipe', class: "btn btn-success") %>
+        <% end %>
+    </div>
+</div>
+<style> 
+.well {
+  background-color: #EDEDED;
+}
+
+
+input, textarea, select, .uneditable_input {
+  border: 1px solid #d2d2d2;
+  border-radius: 7px;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+input {
+  height: auto !important;
+}
+</style>
