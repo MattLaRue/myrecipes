@@ -5,7 +5,7 @@
     <div class="row">
         <div class="col-md-2">
             <section class="chef_info center">
-                <%= gravatar_for recipe.chef, size: 100 %>
+                <%= link_to gravatar_for(recipe.chef, size: 100), chef_path(recipe.chef) %>
                 <h5>Chef name: <%= recipe.chef.chefname %></h5>
             </section>
         </div>
@@ -14,7 +14,8 @@
             <h4><%= link_to recipe.name,  recipe_path(recipe) %> </h4>
             <p> <%= recipe.summary %></p>
             <p> 
-            <span class='quiet'><small>Created: <%= time_ago_in_words(recipe.created_at) %> ago, </small></span>
+            <span class='quiet'><small>Created: <%= time_ago_in_words(recipe.created_at) %> ago </small></span>
+            <br />
             <span class='quiet'><small>Updated: <%= time_ago_in_words(recipe.updated_at) %> ago </small></span>
             </p>
             <div class="pull-right">

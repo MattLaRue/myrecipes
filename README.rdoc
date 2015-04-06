@@ -20,3 +20,18 @@ email: string
 -email must be present
 -email must be unique (for logins later)
 -email must be valid
+
+
+Chefs: 
+We have models and validation
+Chefs table with chefname and email
+
+Need:
+Passwords for authentication 
+Email as login credential
+Ability to Register new chefs 
+Display a chef's profile
+List chefs
+Chefs log in/out
+Restrict actions to only the chef that is logged in
+Restrict edit of recipe to only chef's who create the recipes
